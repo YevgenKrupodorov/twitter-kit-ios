@@ -17,6 +17,8 @@ xcuserdata/
 config.log
 config.status
 *.xcscmblueprint
+iphoneos/
+iphonesimulator/
 
 *.gcda
 *.gcno
