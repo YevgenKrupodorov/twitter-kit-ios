@@ -7,7 +7,7 @@ xcodebuild \
     -sdk "iphonesimulator" \
     HEADER_SEARCH_PATHS="$(pwd)/TwitterCore/iphonesimulator/Headers $(pwd)/TwitterCore/iphonesimulator/PrivateHeaders"  \
     CONFIGURATION_BUILD_DIR=./iphonesimulator \
-    clean build
+    clean build | xcpretty
 
 ## Build TwitterKit.framework - armv7, arm64
 xcodebuild \
@@ -16,16 +16,14 @@ xcodebuild \
     -sdk "iphoneos" \
     HEADER_SEARCH_PATHS="$(pwd)/TwitterCore/iphoneos/Headers $(pwd)/TwitterCore/iphoneos/PrivateHeaders"  \
     CONFIGURATION_BUILD_DIR=./iphoneos \
-    clean build
+    clean build | xcpretty
 
 ## Merge into one TwitterKit.framework with x86_64, armv7, arm64
-rm -rf iOS
-mkdir -p iOS
-cp -r TwitterKit/iphoneos/TwitterKit.framework/ iOS/TwitterKit.framework
-lipo -create -output iOS/TwitterKit.framework/TwitterKit TwitterKit/iphoneos/TwitterKit.framework/TwitterKit TwitterKit/iphonesimulator/TwitterKit.framework/TwitterKit
-lipo -archs iOS/TwitterKit.framework/TwitterKit
+rm -rf artifacts
+mkdir -p artifacts
 
-## Zip them into TwitterKit.zip
-rm TwitterKit.zip
-zip -r TwitterKit.zip iOS/*
-rm -rf iOS
+cp -r TwitterKit/iphoneos/TwitterKit.framework/ artifacts/TwitterKit.framework
+lipo -create -output artifacts/TwitterKit.framework/TwitterKit TwitterKit/iphoneos/TwitterKit.framework/TwitterKit TwitterKit/iphonesimulator/TwitterKit.framework/TwitterKit
+lipo -archs artifacts/TwitterKit.framework/TwitterKit
+
+xattr -cr artifacts
