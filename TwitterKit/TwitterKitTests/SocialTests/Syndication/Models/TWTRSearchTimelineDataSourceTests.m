@@ -18,6 +18,7 @@
 #import <OCMock/OCMock.h>
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import <TwitterKit/TWTRKit.h>
 #import "TWTRAPIClient_Private.h"
 #import "TWTRKit.h"
 #import "TWTRSearchTimelineDataSource.h"

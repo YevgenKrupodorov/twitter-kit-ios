@@ -15,7 +15,7 @@
  *
  */
 
-#import <TwitterCore/TWTRAuthConfig.h>
+@import TwitterKit;
 #import "TWTRAuthenticationConstants.h"
 #import "TWTRTestCase.h"
 #import "TWTRUserAPIClient.h"

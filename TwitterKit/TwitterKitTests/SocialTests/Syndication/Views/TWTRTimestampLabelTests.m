@@ -73,8 +73,8 @@
 - (void)testNilDate_EmptyStrings
 {
     self.timestamp.date = nil;
-    XCTAssertEqual(self.timestamp.text, @"");
-    XCTAssertEqual(self.timestamp.accessibilityLabel, @"");
+    XCTAssertEqualObjects(self.timestamp.text, @"");
+    XCTAssertEqualObjects(self.timestamp.accessibilityLabel, @"");
 }
 
 - (void)testRegularFormattedDate

@@ -18,7 +18,7 @@
 @class TWTRGuestSession;
 @class TWTRSession;
 @class TWTRAuthConfig;
-#import <TwitterCore/TWTRSessionStore.h>
+@import TwitterKit;
 
 @interface TWTRPipelineSessionMock : NSObject <TWTRSessionStore>
 

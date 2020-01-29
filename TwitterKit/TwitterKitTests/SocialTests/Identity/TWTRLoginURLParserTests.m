@@ -60,7 +60,7 @@
 {
     NSString *appScheme = [self.loginURLParser authRedirectScheme];
 
-    XCTAssertEqual(appScheme, @"twittersdk");
+    XCTAssertEqualObjects(appScheme, @"twittersdk");
 }
 
 - (void)testURLScheme_usesDefaultWhenInvalidURLScheme

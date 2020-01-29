@@ -25,6 +25,15 @@
 #error "TwitterKit doesn't support iOS 8.x and lower. Please, change your minimum deployment target to iOS 9.0"
 #endif
 
+#import "TWTRAPIErrorCode.h"
+#import "TWTRAuthConfig.h"
+#import "TWTRAuthSession.h"
+#import "TWTRConstants.h"
+#import "TWTRCoreOAuthSigning.h"
+#import "TWTRGuestSession.h"
+#import "TWTRSession.h"
+#import "TWTRSessionStore.h"
+
 #import "TWTRAPIClient.h"
 #import "TWTRCollectionTimelineDataSource.h"
 #import "TWTRComposer.h"

@@ -20,6 +20,20 @@
                ReferencedContainer = "container:TwitterKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A966541318EB687000B61CEE"
+               BuildableName = "TwitterKitTests.xctest"
+               BlueprintName = "TwitterKit Tests"
+               ReferencedContainer = "container:TwitterKit.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -46,6 +60,14 @@
                BlueprintName = "TwitterKit Tests"
                ReferencedContainer = "container:TwitterKit.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "TWTRResourcesUtilTests">
+               </Test>
+               <Test
+                  Identifier = "TWTRWebViewControllerTests">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
    </TestAction>

@@ -19,8 +19,8 @@
 
 #import <Accounts/Accounts.h>
 #import <OCMock/OCMock.h>
-#import <TwitterCore/TWTRConstants.h>
-#import <TwitterCore/TWTRUtils.h>
+#import "TWTRConstants.h"
+#import "TWTRUtils.h"
 #import "TWTRAPIServiceConfig.h"
 #import "TWTRAppleSocialAuthenticaticationProvider.h"
 #import "TWTRAppleSocialAuthenticaticationProvider_Private.h"

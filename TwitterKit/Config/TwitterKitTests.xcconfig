@@ -28,4 +28,4 @@ LIBRARY_SEARCH_PATHS = $(inherited) $(PROJECT_DIR)/../vendor
 OTHER_LDFLAGS[sdk=iphoneos*] = $(inherited) -all_load -framework OCMock
 OTHER_LDFLAGS[sdk=iphonesimulator*] = $(inherited) -all_load -framework OCMock
 
-FRAMEWORK_SEARCH_PATHS = $(inherited) "$(PROJECT_DIR)/../shared/"
+FRAMEWORK_SEARCH_PATHS = $(inherited) $(PROJECT_DIR)/../vendor "$(PROJECT_DIR)/../shared/"
