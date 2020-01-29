@@ -16,7 +16,7 @@
  */
 
 #import <OCMock/OCMock.h>
-#import <TwitterCore/TWTRUtils.h>
+#import "TWTRUtils.h"
 #import <XCTest/XCTest.h>
 #import "TWTRFixtureLoader.h"
 #import "TWTRNotificationCenter.h"

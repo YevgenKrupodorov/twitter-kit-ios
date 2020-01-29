@@ -16,8 +16,8 @@
  */
 
 #import "TWTRTestTweetViewDelegate.h"
-#import <TwitterCore/TWTRSession.h>
-#import <TwitterCore/TWTRSessionStore.h>
+#import "TWTRSession.h"
+#import "TWTRSessionStore.h"
 
 @implementation TWTRActionAndSessionTweetViewDelegate
 

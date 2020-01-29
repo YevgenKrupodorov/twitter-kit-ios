@@ -16,7 +16,7 @@
  */
 
 #import <OCMock/OCMock.h>
-#import <TwitterCore/TWTRDateFormatters.h>
+#import "TWTRDateFormatters.h"
 #import "TWTRDateFormatter.h"
 #import "TWTRTestCase.h"
 

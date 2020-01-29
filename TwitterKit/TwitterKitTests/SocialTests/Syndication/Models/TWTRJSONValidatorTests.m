@@ -15,7 +15,7 @@
  *
  */
 
-#import <TwitterCore/TWTRDateFormatters.h>
+#import "TWTRDateFormatters.h"
 #import <XCTest/XCTest.h>
 #import "TWTRJSONKeyRequirement.h"
 #import "TWTRJSONValidator.h"

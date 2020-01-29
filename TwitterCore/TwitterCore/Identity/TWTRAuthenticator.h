@@ -20,7 +20,6 @@
  */
 
 #import <Foundation/Foundation.h>
-#import <TwitterCore/TwitterCore.h>
 #import "TWTRAuthenticationConstants.h"
 
 /**

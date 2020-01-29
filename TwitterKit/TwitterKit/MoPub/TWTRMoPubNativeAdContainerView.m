@@ -17,7 +17,7 @@
 
 #import "TWTRMoPubNativeAdContainerView.h"
 #import <MoPub/MPNativeAdRendering.h>
-#import <TwitterCore/TWTRColorUtil.h>
+#import "TWTRColorUtil.h"
 #import "TWTRMoPubAdDisclaimerView.h"
 #import "TWTRMoPubNativeAdView.h"
 #import "TWTRViewUtil.h"

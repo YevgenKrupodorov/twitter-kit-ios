@@ -19,8 +19,8 @@
  This header is private to the Twitter Kit SDK and not exposed for public SDK consumption
  */
 
-#import <TwitterCore/TWTRSession.h>
 #import <UIKit/UIKit.h>
+#import "TWTRSession.h"
 @class TWTRSessionStore;
 
 NS_ASSUME_NONNULL_BEGIN

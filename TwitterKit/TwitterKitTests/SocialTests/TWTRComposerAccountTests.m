@@ -15,7 +15,7 @@
  *
  */
 
-#import <TwitterCore/TWTRSession.h>
+#import "TWTRSession.h"
 #import <XCTest/XCTest.h>
 #import "TWTRComposerAccount.h"
 

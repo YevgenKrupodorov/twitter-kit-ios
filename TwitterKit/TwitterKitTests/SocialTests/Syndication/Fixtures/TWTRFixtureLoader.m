@@ -16,9 +16,9 @@
  */
 
 #import "TWTRFixtureLoader.h"
-#import <TwitterCore/TWTRAuthenticationConstants.h>
-#import <TwitterCore/TWTRGuestSession.h>
-#import <TwitterCore/TWTRSession.h>
+#import "TWTRAuthenticationConstants.h"
+#import "TWTRGuestSession.h"
+#import "TWTRSession.h"
 #import "TWTRTweet.h"
 #import "TWTRTweetMediaEntity.h"
 #import "TWTRTweetUrlEntity.h"

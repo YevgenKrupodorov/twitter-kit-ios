@@ -20,7 +20,7 @@
 #import <MoPub/MPNativeAdRequestTargeting.h>
 #import <MoPub/MPStaticNativeAdRenderer.h>
 #import <MoPub/MPStaticNativeAdRendererSettings.h>
-#import <TwitterCore/TWTRUtils.h>
+#import "TWTRUtils.h"
 #import "TWTRMoPubAdConfiguration_Private.h"
 #import "TWTRMoPubNativeAdContainerView.h"
 

@@ -16,8 +16,8 @@
  */
 
 #import "TWTRTimelineViewController.h"
-#import <TwitterCore/TWTRMultiThreadUtil.h>
-#import <TwitterCore/TWTRSessionStore.h>
+#import "TWTRMultiThreadUtil.h"
+#import "TWTRSessionStore.h"
 #import "TWTRCollectionTimelineDataSource.h"
 #import "TWTRNotificationConstants.h"
 #import "TWTRTableViewAdPlacer.h"

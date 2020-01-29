@@ -16,11 +16,11 @@
  */
 
 #import <OCMock/OCMock.h>
-#import <TwitterCore/TWTRAPIServiceConfigRegistry.h>
-#import <TwitterCore/TWTRAuthConfig.h>
-#import <TwitterCore/TWTRAuthenticationConstants.h>
-#import <TwitterCore/TWTRConstants.h>
-#import <TwitterCore/TWTRSession.h>
+#import "TWTRAPIServiceConfigRegistry.h"
+#import "TWTRAuthConfig.h"
+#import "TWTRAuthenticationConstants.h"
+#import "TWTRConstants.h"
+#import "TWTRSession.h"
 #import <XCTest/XCTest.h>
 #import "TWTROAuthSigning.h"
 #import "TWTRTwitterAPIServiceConfig.h"

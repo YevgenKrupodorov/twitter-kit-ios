@@ -15,7 +15,7 @@
  *
  */
 
-#import <TwitterCore/TWTRNetworking.h>
+#import "TWTRNetworking.h"
 #import <TwitterKit/TWTRKit.h>
 #import "TWTRMobileSSO.h"
 

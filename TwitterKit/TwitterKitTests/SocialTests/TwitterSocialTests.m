@@ -16,13 +16,13 @@
  */
 
 #import <OCMock/OCMock.h>
-#import <TwitterCore/TWTRAppInstallationUUID.h>
-#import <TwitterCore/TWTRAuthenticationConstants.h>
-#import <TwitterCore/TWTRAuthenticator.h>
-#import <TwitterCore/TWTRGuestSession.h>
-#import <TwitterCore/TWTRSession.h>
-#import <TwitterCore/TWTRSessionStore.h>
-#import <TwitterCore/TWTRSessionStore_Private.h>
+#import "TWTRAppInstallationUUID.h"
+#import "TWTRAuthenticationConstants.h"
+#import "TWTRAuthenticator.h"
+#import "TWTRGuestSession.h"
+#import "TWTRSession.h"
+#import "TWTRSessionStore.h"
+#import "TWTRSessionStore_Private.h"
 #import "TWTRAPIClient.h"
 #import "TWTRAPIClient_Private.h"
 #import "TWTRCookieStorageUtil.h"

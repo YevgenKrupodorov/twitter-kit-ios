@@ -16,9 +16,9 @@
  */
 
 #import <OCMock/OCMock.h>
-#import <TwitterCore/TWTRGuestSession.h>
-#import <TwitterCore/TWTRNetworking.h>
-#import <TwitterCore/TWTRSession.h>
+#import "TWTRGuestSession.h"
+#import "TWTRNetworking.h"
+#import "TWTRSession.h"
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 #import "TWTRMockURLSessionProtocol.h"

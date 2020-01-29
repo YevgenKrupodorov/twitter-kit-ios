@@ -112,7 +112,7 @@
 #import "TWTRSEUIBundle.h"
 #import "UIView+TSEExtensions.h"
 
-#import <TwitterCore/TWTRColorUtil.h>
+#import "TWTRColorUtil.h"
 
 @import CoreLocation;
 

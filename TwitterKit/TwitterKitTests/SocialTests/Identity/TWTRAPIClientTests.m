@@ -16,8 +16,8 @@
  */
 
 #import <OCMock/OCMock.h>
-#import <TwitterCore/TWTRAuthenticationConstants.h>
-#import <TwitterCore/TWTRNetworking.h>
+#import "TWTRAuthenticationConstants.h"
+#import "TWTRNetworking.h"
 #import "TWTRAPIClient.h"
 #import "TWTRAPIClient_Private.h"
 #import "TWTRFixtureLoader.h"
