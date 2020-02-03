@@ -24,6 +24,4 @@ MODULEMAP_FILE = TwitterKit-module.modulemap
 PRIVATE_HEADERS_FOLDER_PATH = $(CONTENTS_FOLDER_PATH)/PrivateHeaders
 PUBLIC_HEADERS_FOLDER_PATH = $(CONTENTS_FOLDER_PATH)/Headers
 
-FRAMEWORK_SEARCH_PATHS = $(PROJECT_DIR)/../vendor
-
 GCC_PREFIX_HEADER = TwitterKit/Supporting Files/TwitterKit-Prefix.pch

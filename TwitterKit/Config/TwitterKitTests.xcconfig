@@ -21,11 +21,9 @@ GCC_PREFIX_HEADER = $(PRODUCT_NAME)/SocialTests/TwitterKit Tests-Prefix.pch
 INFOPLIST_FILE = $(PRODUCT_NAME)/SocialTests/TwitterSocial Tests-Info.plist
 
 // Deal with the fact that OCMock is packaged as a framework on OS X but not on iOS
-HEADER_SEARCH_PATHS = $(inherited) $(TARGET_BUILD_DIR)/Headers/ $(TARGET_BUILD_DIR)/PrivateHeaders/ $(PROJECT_DIR)/../vendor
-
-LIBRARY_SEARCH_PATHS = $(inherited) $(PROJECT_DIR)/../vendor
+HEADER_SEARCH_PATHS = $(inherited) $(TARGET_BUILD_DIR)/Headers/ $(TARGET_BUILD_DIR)/PrivateHeaders/
 
 OTHER_LDFLAGS[sdk=iphoneos*] = $(inherited) -all_load -framework OCMock
 OTHER_LDFLAGS[sdk=iphonesimulator*] = $(inherited) -all_load -framework OCMock
 
-FRAMEWORK_SEARCH_PATHS = $(inherited) $(PROJECT_DIR)/../vendor "$(PROJECT_DIR)/../shared/"
+FRAMEWORK_SEARCH_PATHS = $(inherited) $(PROJECT_DIR)/../Carthage/Build/iOS

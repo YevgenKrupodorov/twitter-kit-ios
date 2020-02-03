@@ -23,7 +23,7 @@ iphonesimulator/
 *.gcda
 *.gcno
 
-!**/Carthage/Build
+Carthage
 Artifacts
 DemoApp/Config.xcconfig
 

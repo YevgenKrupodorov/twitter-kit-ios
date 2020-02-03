@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2002E6031E5F5BDA007AF951 /* TWTRTweetDelegationHelperTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2002E6021E5F5BDA007AF951 /* TWTRTweetDelegationHelperTest.m */; };
-		20563D111ED4F6FF0094DAB3 /* TWTRStubMobileSSO.m in Sources */ = {isa = PBXBuildFile; fileRef = 20563D0D1ED4F6FF0094DAB3 /* TWTRStubMobileSSO.m */; };
 		208B91451E6E38050028378B /* SendTweet.json in Resources */ = {isa = PBXBuildFile; fileRef = 208B91441E6E38050028378B /* SendTweet.json */; };
 		20E4EF8B1F8573C6008F477A /* TWTRVideoPlaybackState.h in Headers */ = {isa = PBXBuildFile; fileRef = DBAE47221C1B56E10094E7F0 /* TWTRVideoPlaybackState.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		225826721DDBDE9B004AFF06 /* TWTRTimelineFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2258266F1DDBDE9B004AFF06 /* TWTRTimelineFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -49,14 +48,6 @@
 		37579D8E1D4FBFAA0017DBC1 /* TWTRRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 37579D8B1D4FBFAA0017DBC1 /* TWTRRuntime.h */; };
 		376488C61D6FC191002C449E /* TWTRMultiPhotoLayoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 376488C51D6FC191002C449E /* TWTRMultiPhotoLayoutTests.m */; };
 		376686F11965DADA00D2008E /* TWTRPersistentStoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 376686F01965DADA00D2008E /* TWTRPersistentStoreTests.m */; };
-		3777840D1E96B8D200BC4830 /* TWTRTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 377783F11E96B8D200BC4830 /* TWTRTestCase.m */; };
-		377784191E96B8D200BC4830 /* TUDelorean+Rollback.m in Sources */ = {isa = PBXBuildFile; fileRef = 377784001E96B8D200BC4830 /* TUDelorean+Rollback.m */; };
-		3777841B1E96B8D200BC4830 /* TUDelorean.m in Sources */ = {isa = PBXBuildFile; fileRef = 377784021E96B8D200BC4830 /* TUDelorean.m */; };
-		3777841D1E96B8D200BC4830 /* TWTRMockURLSessionProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 377784051E96B8D200BC4830 /* TWTRMockURLSessionProtocol.m */; };
-		3777841F1E96B8D200BC4830 /* TWTRStubTimelineDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 377784071E96B8D200BC4830 /* TWTRStubTimelineDataSource.m */; };
-		377784211E96B8D200BC4830 /* TWTRStubTweetCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 377784091E96B8D200BC4830 /* TWTRStubTweetCache.m */; };
-		377784231E96B8D200BC4830 /* TWTRStubTwitterClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3777840B1E96B8D200BC4830 /* TWTRStubTwitterClient.m */; };
-		377941501E96DB610049A022 /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3779414F1E96DB610049A022 /* OCMock.framework */; };
 		377AF9311E7A00EB004099F9 /* TWTRComposerAccountTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 377AF9301E7A00EB004099F9 /* TWTRComposerAccountTests.m */; };
 		377CCA9A1D513BFF009F5765 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7B96448A199BE365002117B5 /* TwitterKitResources.bundle */; };
 		3784E1A119998DBE0073190D /* GatesTweet.json in Resources */ = {isa = PBXBuildFile; fileRef = 3784E1A019998DBE0073190D /* GatesTweet.json */; };
@@ -222,6 +213,16 @@
 		DBFE5B351D14A57800C77F64 /* ExtendedTweet.json in Resources */ = {isa = PBXBuildFile; fileRef = DBFE5B2F1D146D0700C77F64 /* ExtendedTweet.json */; };
 		F643DC2323E8879F009E6640 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F69346CB23E4DA23008F2925 /* XCTest.framework */; };
 		F643DC2623E88A1F009E6640 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6BE156423E1EEDC00819ACF /* SafariServices.framework */; };
+		F643DC3C23E8952E009E6640 /* TWTRStubTweetCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F643DC2C23E8952D009E6640 /* TWTRStubTweetCache.m */; };
+		F643DC3D23E8952E009E6640 /* TWTRStubTimelineDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F643DC2D23E8952D009E6640 /* TWTRStubTimelineDataSource.m */; };
+		F643DC3E23E8952E009E6640 /* TWTRMockURLSessionProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = F643DC2E23E8952D009E6640 /* TWTRMockURLSessionProtocol.m */; };
+		F643DC3F23E8952E009E6640 /* TWTRStubTwitterClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F643DC3023E8952D009E6640 /* TWTRStubTwitterClient.m */; };
+		F643DC4023E8952E009E6640 /* TUDelorean.m in Sources */ = {isa = PBXBuildFile; fileRef = F643DC3523E8952E009E6640 /* TUDelorean.m */; };
+		F643DC4123E8952E009E6640 /* TUDelorean+Rollback.m in Sources */ = {isa = PBXBuildFile; fileRef = F643DC3823E8952E009E6640 /* TUDelorean+Rollback.m */; };
+		F643DC4223E8952E009E6640 /* TWTRTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F643DC3B23E8952E009E6640 /* TWTRTestCase.m */; };
+		F643DC4423E8955C009E6640 /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F643DC4323E8955C009E6640 /* OCMock.framework */; };
+		F643DC4723E8963C009E6640 /* TWTRStubMobileSSO.m in Sources */ = {isa = PBXBuildFile; fileRef = F643DC4623E8963C009E6640 /* TWTRStubMobileSSO.m */; };
+		F643DC4823E896F7009E6640 /* OCMock.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F643DC4323E8955C009E6640 /* OCMock.framework */; };
 		F69346F823E4E5F2008F2925 /* TWTRTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A7FF0D18E4AAA8008334E6 /* TWTRTwitter.m */; };
 		F69346F923E4E5FB008F2925 /* TWTRMobileSSO.m in Sources */ = {isa = PBXBuildFile; fileRef = 373F51501E9EF62600B37C86 /* TWTRMobileSSO.m */; };
 		F69346FA23E4E641008F2925 /* TWTRAPIConstantsStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D682B3418E25A1300145716 /* TWTRAPIConstantsStatus.m */; };
@@ -394,7 +395,6 @@
 		F69347AB23E4E857008F2925 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F69347AA23E4E857008F2925 /* QuartzCore.framework */; };
 		F69347AD23E4E878008F2925 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F69347AC23E4E878008F2925 /* MobileCoreServices.framework */; platformFilter = ios; };
 		F69347B023E4EAF6008F2925 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6BE156423E1EEDC00819ACF /* SafariServices.framework */; };
-		F69347B223E4ECA1008F2925 /* OCMock.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3779414F1E96DB610049A022 /* OCMock.framework */; };
 		F6BE14DB23E1E30300819ACF /* TWTRCoreConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = F6BE144923E1E30300819ACF /* TWTRCoreConstants.h */; };
 		F6BE14DC23E1E30300819ACF /* TWTRSecItemWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = F6BE144B23E1E30300819ACF /* TWTRSecItemWrapper.h */; };
 		F6BE14DD23E1E30300819ACF /* TWTRTokenOnlyAuthSession.m in Sources */ = {isa = PBXBuildFile; fileRef = F6BE144C23E1E30300819ACF /* TWTRTokenOnlyAuthSession.m */; };
@@ -601,9 +601,9 @@
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
-			dstSubfolderSpec = 16;
+			dstSubfolderSpec = 10;
 			files = (
-				F69347B223E4ECA1008F2925 /* OCMock.framework in CopyFiles */,
+				F643DC4823E896F7009E6640 /* OCMock.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,8 +613,6 @@
 		185CE0D41A0142C5006C5EA4 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1889E17B1A00273D00827E5A /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2002E6021E5F5BDA007AF951 /* TWTRTweetDelegationHelperTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRTweetDelegationHelperTest.m; sourceTree = "<group>"; };
-		20563D0C1ED4F6FF0094DAB3 /* TWTRStubMobileSSO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWTRStubMobileSSO.h; path = TwitterKitTests/NetworkingTests/TWTRStubMobileSSO.h; sourceTree = SOURCE_ROOT; };
-		20563D0D1ED4F6FF0094DAB3 /* TWTRStubMobileSSO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWTRStubMobileSSO.m; path = TwitterKitTests/NetworkingTests/TWTRStubMobileSSO.m; sourceTree = SOURCE_ROOT; };
 		2081B7101E39661C00183426 /* QuoteTweetInConversation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = QuoteTweetInConversation.json; sourceTree = "<group>"; };
 		208B91441E6E38050028378B /* SendTweet.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SendTweet.json; sourceTree = "<group>"; };
 		2258266F1DDBDE9B004AFF06 /* TWTRTimelineFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRTimelineFilter.h; sourceTree = "<group>"; };
@@ -715,21 +713,6 @@
 		376686F01965DADA00D2008E /* TWTRPersistentStoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRPersistentStoreTests.m; sourceTree = "<group>"; };
 		376CFC20194A7F7F00E982FB /* TWTRTweetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = TWTRTweetView.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		376CFC21194A7F7F00E982FB /* TWTRTweetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = TWTRTweetView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		377783F01E96B8D200BC4830 /* TWTRTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWTRTestCase.h; path = ../shared/TwitterTestFoundation/Base/TWTRTestCase.h; sourceTree = SOURCE_ROOT; };
-		377783F11E96B8D200BC4830 /* TWTRTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWTRTestCase.m; path = ../shared/TwitterTestFoundation/Base/TWTRTestCase.m; sourceTree = SOURCE_ROOT; };
-		377783FF1E96B8D200BC4830 /* TUDelorean+Rollback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TUDelorean+Rollback.h"; sourceTree = "<group>"; };
-		377784001E96B8D200BC4830 /* TUDelorean+Rollback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TUDelorean+Rollback.m"; sourceTree = "<group>"; };
-		377784011E96B8D200BC4830 /* TUDelorean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUDelorean.h; sourceTree = "<group>"; };
-		377784021E96B8D200BC4830 /* TUDelorean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUDelorean.m; sourceTree = "<group>"; };
-		377784041E96B8D200BC4830 /* TWTRMockURLSessionProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWTRMockURLSessionProtocol.h; path = ../shared/TwitterTestFoundation/URLMocking/TWTRMockURLSessionProtocol.h; sourceTree = SOURCE_ROOT; };
-		377784051E96B8D200BC4830 /* TWTRMockURLSessionProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWTRMockURLSessionProtocol.m; path = ../shared/TwitterTestFoundation/URLMocking/TWTRMockURLSessionProtocol.m; sourceTree = SOURCE_ROOT; };
-		377784061E96B8D200BC4830 /* TWTRStubTimelineDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWTRStubTimelineDataSource.h; path = ../shared/TwitterTestFoundation/URLMocking/TWTRStubTimelineDataSource.h; sourceTree = SOURCE_ROOT; };
-		377784071E96B8D200BC4830 /* TWTRStubTimelineDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWTRStubTimelineDataSource.m; path = ../shared/TwitterTestFoundation/URLMocking/TWTRStubTimelineDataSource.m; sourceTree = SOURCE_ROOT; };
-		377784081E96B8D200BC4830 /* TWTRStubTweetCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWTRStubTweetCache.h; path = ../shared/TwitterTestFoundation/URLMocking/TWTRStubTweetCache.h; sourceTree = SOURCE_ROOT; };
-		377784091E96B8D200BC4830 /* TWTRStubTweetCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWTRStubTweetCache.m; path = ../shared/TwitterTestFoundation/URLMocking/TWTRStubTweetCache.m; sourceTree = SOURCE_ROOT; };
-		3777840A1E96B8D200BC4830 /* TWTRStubTwitterClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWTRStubTwitterClient.h; path = ../shared/TwitterTestFoundation/URLMocking/TWTRStubTwitterClient.h; sourceTree = SOURCE_ROOT; };
-		3777840B1E96B8D200BC4830 /* TWTRStubTwitterClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWTRStubTwitterClient.m; path = ../shared/TwitterTestFoundation/URLMocking/TWTRStubTwitterClient.m; sourceTree = SOURCE_ROOT; };
-		3779414F1E96DB610049A022 /* OCMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMock.framework; path = ../vendor/OCMock.framework; sourceTree = SOURCE_ROOT; };
 		377AF9301E7A00EB004099F9 /* TWTRComposerAccountTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWTRComposerAccountTests.m; path = SocialTests/TWTRComposerAccountTests.m; sourceTree = "<group>"; };
 		377AF9321E7A0359004099F9 /* TWTRSharedComposerWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRSharedComposerWrapper.h; sourceTree = "<group>"; };
 		377AF9331E7A0359004099F9 /* TWTRSharedComposerWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRSharedComposerWrapper.m; sourceTree = "<group>"; };
@@ -1154,6 +1137,23 @@
 		DBFE5B2F1D146D0700C77F64 /* ExtendedTweet.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ExtendedTweet.json; sourceTree = "<group>"; };
 		F5154B8119D4E6130054DECF /* TWTRComposer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWTRComposer.h; path = Social/Syndication/Controllers/TWTRComposer.h; sourceTree = "<group>"; };
 		F5154B8219D4E6130054DECF /* TWTRComposer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWTRComposer.m; path = Social/Syndication/Controllers/TWTRComposer.m; sourceTree = "<group>"; };
+		F643DC2B23E8952D009E6640 /* TWTRStubTwitterClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRStubTwitterClient.h; sourceTree = "<group>"; };
+		F643DC2C23E8952D009E6640 /* TWTRStubTweetCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRStubTweetCache.m; sourceTree = "<group>"; };
+		F643DC2D23E8952D009E6640 /* TWTRStubTimelineDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRStubTimelineDataSource.m; sourceTree = "<group>"; };
+		F643DC2E23E8952D009E6640 /* TWTRMockURLSessionProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRMockURLSessionProtocol.m; sourceTree = "<group>"; };
+		F643DC2F23E8952D009E6640 /* TWTRStubTweetCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRStubTweetCache.h; sourceTree = "<group>"; };
+		F643DC3023E8952D009E6640 /* TWTRStubTwitterClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRStubTwitterClient.m; sourceTree = "<group>"; };
+		F643DC3123E8952D009E6640 /* TWTRStubTimelineDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRStubTimelineDataSource.h; sourceTree = "<group>"; };
+		F643DC3223E8952D009E6640 /* TWTRMockURLSessionProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRMockURLSessionProtocol.h; sourceTree = "<group>"; };
+		F643DC3523E8952E009E6640 /* TUDelorean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUDelorean.m; sourceTree = "<group>"; };
+		F643DC3623E8952E009E6640 /* TUDelorean+Rollback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TUDelorean+Rollback.h"; sourceTree = "<group>"; };
+		F643DC3723E8952E009E6640 /* TUDelorean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUDelorean.h; sourceTree = "<group>"; };
+		F643DC3823E8952E009E6640 /* TUDelorean+Rollback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TUDelorean+Rollback.m"; sourceTree = "<group>"; };
+		F643DC3A23E8952E009E6640 /* TWTRTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRTestCase.h; sourceTree = "<group>"; };
+		F643DC3B23E8952E009E6640 /* TWTRTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRTestCase.m; sourceTree = "<group>"; };
+		F643DC4323E8955C009E6640 /* OCMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMock.framework; path = ../Carthage/Build/iOS/OCMock.framework; sourceTree = "<group>"; };
+		F643DC4523E8963C009E6640 /* TWTRStubMobileSSO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTRStubMobileSSO.h; sourceTree = "<group>"; };
+		F643DC4623E8963C009E6640 /* TWTRStubMobileSSO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTRStubMobileSSO.m; sourceTree = "<group>"; };
 		F69346CB23E4DA23008F2925 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		F69347A623E4E7CE008F2925 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
 		F69347A823E4E7EE008F2925 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
@@ -1367,12 +1367,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F643DC4423E8955C009E6640 /* OCMock.framework in Frameworks */,
 				F6BE163123E221EA00819ACF /* UIKit.framework in Frameworks */,
 				F6BE163423E2228300819ACF /* TwitterKit.framework in Frameworks */,
 				AA3E099920125E9100792255 /* CoreLocation.framework in Frameworks */,
 				F6BE163223E2222C00819ACF /* CoreGraphics.framework in Frameworks */,
 				F6BE162F23E221E300819ACF /* Accounts.framework in Frameworks */,
-				377941501E96DB610049A022 /* OCMock.framework in Frameworks */,
 				F643DC2323E8879F009E6640 /* XCTest.framework in Frameworks */,
 				F6BE163323E2223200819ACF /* Security.framework in Frameworks */,
 				F6BE157223E1EF8D00819ACF /* MapKit.framework in Frameworks */,
@@ -1408,6 +1408,7 @@
 		208ACAB41FB2800900008F42 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F643DC4323E8955C009E6640 /* OCMock.framework */,
 				F6BE156823E1EEDC00819ACF /* Foundation.framework */,
 				F6BE159523E2173400819ACF /* UIKit.framework */,
 				F6BE157023E1EEDD00819ACF /* Accounts.framework */,
@@ -1477,62 +1478,6 @@
 			);
 			name = ThirdParty;
 			path = Social/Syndication/ThirdParty;
-			sourceTree = "<group>";
-		};
-		377783EE1E96B8D200BC4830 /* TwitterTestFoundation */ = {
-			isa = PBXGroup;
-			children = (
-				377783EF1E96B8D200BC4830 /* Base */,
-				377783F21E96B8D200BC4830 /* ThirdParty */,
-				377784031E96B8D200BC4830 /* URLMocking */,
-			);
-			name = TwitterTestFoundation;
-			path = ../../shared/TwitterTestFoundation;
-			sourceTree = "<group>";
-		};
-		377783EF1E96B8D200BC4830 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				377783F01E96B8D200BC4830 /* TWTRTestCase.h */,
-				377783F11E96B8D200BC4830 /* TWTRTestCase.m */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		377783F21E96B8D200BC4830 /* ThirdParty */ = {
-			isa = PBXGroup;
-			children = (
-				377783FE1E96B8D200BC4830 /* TUDelorean */,
-			);
-			path = ThirdParty;
-			sourceTree = "<group>";
-		};
-		377783FE1E96B8D200BC4830 /* TUDelorean */ = {
-			isa = PBXGroup;
-			children = (
-				377783FF1E96B8D200BC4830 /* TUDelorean+Rollback.h */,
-				377784001E96B8D200BC4830 /* TUDelorean+Rollback.m */,
-				377784011E96B8D200BC4830 /* TUDelorean.h */,
-				377784021E96B8D200BC4830 /* TUDelorean.m */,
-			);
-			path = TUDelorean;
-			sourceTree = "<group>";
-		};
-		377784031E96B8D200BC4830 /* URLMocking */ = {
-			isa = PBXGroup;
-			children = (
-				377784041E96B8D200BC4830 /* TWTRMockURLSessionProtocol.h */,
-				377784051E96B8D200BC4830 /* TWTRMockURLSessionProtocol.m */,
-				377784061E96B8D200BC4830 /* TWTRStubTimelineDataSource.h */,
-				377784071E96B8D200BC4830 /* TWTRStubTimelineDataSource.m */,
-				377784081E96B8D200BC4830 /* TWTRStubTweetCache.h */,
-				377784091E96B8D200BC4830 /* TWTRStubTweetCache.m */,
-				3777840A1E96B8D200BC4830 /* TWTRStubTwitterClient.h */,
-				3777840B1E96B8D200BC4830 /* TWTRStubTwitterClient.m */,
-				20563D0C1ED4F6FF0094DAB3 /* TWTRStubMobileSSO.h */,
-				20563D0D1ED4F6FF0094DAB3 /* TWTRStubMobileSSO.m */,
-			);
-			path = URLMocking;
 			sourceTree = "<group>";
 		};
 		37B6899A198B1C8200E772CA /* Controllers */ = {
@@ -2040,9 +1985,9 @@
 				DB2931A01B7D160C00C1ECD8 /* TwitterKit */,
 				F6BE15AD23E218BF00819ACF /* TwitterCoreTests */,
 				DB2931B11B7D17C600C1ECD8 /* TwitterKitTests */,
+				F643DC2923E8952D009E6640 /* TwitterTestFoundation */,
 				DB2241711C3DA5F6008A6DC7 /* Supporting Files */,
 				F6BE157323E20E7200819ACF /* Config */,
-				BFF454081A93F7970022A53F /* Vendor */,
 				208ACAB41FB2800900008F42 /* Frameworks */,
 				A97654E618E0B29B00E25169 /* Products */,
 			);
@@ -2117,6 +2062,8 @@
 		A9EE3B5618F4A8A40058D356 /* NetworkingTests */ = {
 			isa = PBXGroup;
 			children = (
+				F643DC4523E8963C009E6640 /* TWTRStubMobileSSO.h */,
+				F643DC4623E8963C009E6640 /* TWTRStubMobileSSO.m */,
 				3DE9C60F1B16777200B141D4 /* TWTRAssetURLSessionConfigTests.m */,
 				37500FE21A898DC3008DD8FF /* TWTRJSONSerializationTests.m */,
 				3DAE93DA1B796CBA00A7F65D /* TWTRURLSessionConfigTests.m */,
@@ -2342,15 +2289,6 @@
 			path = "API Client";
 			sourceTree = "<group>";
 		};
-		BFF454081A93F7970022A53F /* Vendor */ = {
-			isa = PBXGroup;
-			children = (
-				3779414F1E96DB610049A022 /* OCMock.framework */,
-				377783EE1E96B8D200BC4830 /* TwitterTestFoundation */,
-			);
-			path = Vendor;
-			sourceTree = "<group>";
-		};
 		DB2241711C3DA5F6008A6DC7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -2479,6 +2417,60 @@
 				DBD4E2231DB93A1A00E9968A /* TWTRTweetContentViewLayoutFactory.m */,
 			);
 			name = "Tweet View Layouts";
+			sourceTree = "<group>";
+		};
+		F643DC2923E8952D009E6640 /* TwitterTestFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				F643DC2A23E8952D009E6640 /* URLMocking */,
+				F643DC3323E8952D009E6640 /* ThirdParty */,
+				F643DC3923E8952E009E6640 /* Base */,
+			);
+			name = TwitterTestFoundation;
+			path = ../shared/TwitterTestFoundation;
+			sourceTree = "<group>";
+		};
+		F643DC2A23E8952D009E6640 /* URLMocking */ = {
+			isa = PBXGroup;
+			children = (
+				F643DC2B23E8952D009E6640 /* TWTRStubTwitterClient.h */,
+				F643DC2C23E8952D009E6640 /* TWTRStubTweetCache.m */,
+				F643DC2D23E8952D009E6640 /* TWTRStubTimelineDataSource.m */,
+				F643DC2E23E8952D009E6640 /* TWTRMockURLSessionProtocol.m */,
+				F643DC2F23E8952D009E6640 /* TWTRStubTweetCache.h */,
+				F643DC3023E8952D009E6640 /* TWTRStubTwitterClient.m */,
+				F643DC3123E8952D009E6640 /* TWTRStubTimelineDataSource.h */,
+				F643DC3223E8952D009E6640 /* TWTRMockURLSessionProtocol.h */,
+			);
+			path = URLMocking;
+			sourceTree = "<group>";
+		};
+		F643DC3323E8952D009E6640 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				F643DC3423E8952D009E6640 /* TUDelorean */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		F643DC3423E8952D009E6640 /* TUDelorean */ = {
+			isa = PBXGroup;
+			children = (
+				F643DC3523E8952E009E6640 /* TUDelorean.m */,
+				F643DC3623E8952E009E6640 /* TUDelorean+Rollback.h */,
+				F643DC3723E8952E009E6640 /* TUDelorean.h */,
+				F643DC3823E8952E009E6640 /* TUDelorean+Rollback.m */,
+			);
+			path = TUDelorean;
+			sourceTree = "<group>";
+		};
+		F643DC3923E8952E009E6640 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F643DC3A23E8952E009E6640 /* TWTRTestCase.h */,
+				F643DC3B23E8952E009E6640 /* TWTRTestCase.m */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		F6BE144823E1E30300819ACF /* TwitterCore */ = {
@@ -3139,12 +3131,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				377784191E96B8D200BC4830 /* TUDelorean+Rollback.m in Sources */,
 				F6BE162623E218BF00819ACF /* TWTRAPIDateSyncTests.m in Sources */,
 				F6BE161023E218BF00819ACF /* TWTRGuestSessionTests.m in Sources */,
 				376488C61D6FC191002C449E /* TWTRMultiPhotoLayoutTests.m in Sources */,
 				F6BE161B23E218BF00819ACF /* TWTRRequestSigningOperationTests.m in Sources */,
-				377784211E96B8D200BC4830 /* TWTRStubTweetCache.m in Sources */,
 				2297B2DB1DDD3C0800B859B0 /* TWTRTimelineFilterManagerTests.m in Sources */,
 				376686F11965DADA00D2008E /* TWTRPersistentStoreTests.m in Sources */,
 				370B4EF71A8BFEDC004FBA60 /* TWTRSearchTimelineDataSourceTests.m in Sources */,
@@ -3152,6 +3142,7 @@
 				3DEF45691990C17D003C13F7 /* TWTRDateTestHelpers.m in Sources */,
 				3D915F20190441FC00FDC151 /* TWTRViewUtilTests.m in Sources */,
 				37D649AE1CC57B2F009D47EF /* TWTRSampleSubscriber.m in Sources */,
+				F643DC3F23E8952E009E6640 /* TWTRStubTwitterClient.m in Sources */,
 				3733E2791EA818E900E95681 /* TWTRLocalizedResourcesTests.m in Sources */,
 				371BAA791D4FFFC500657D52 /* TWTRRuntimeTests.m in Sources */,
 				373F515E1EA02C4200B37C86 /* TWTRMobileSSOTests.m in Sources */,
@@ -3178,7 +3169,6 @@
 				37B008271C0CF468009D27D5 /* TWTRImageTestHelper.m in Sources */,
 				F6BE161423E218BF00819ACF /* TWTRPipelineSessionMock.m in Sources */,
 				3D27494B19A40A3300A5B93F /* TWTRTweetRepositoryTests.m in Sources */,
-				3777841D1E96B8D200BC4830 /* TWTRMockURLSessionProtocol.m in Sources */,
 				F6BE161523E218BF00819ACF /* TWTRUserSessionVerifierTests.m in Sources */,
 				3DCD62411BAC7E34002C230C /* TWTRTwitterAPIConfigurationTests.m in Sources */,
 				F6BE161A23E218BF00819ACF /* TWTRNetworkingPipelineQueueTests.m in Sources */,
@@ -3195,8 +3185,6 @@
 				37B008201C0CEEE9009D27D5 /* TWTRImageScrollViewTests.m in Sources */,
 				22BA0E6F192560F400A9F03E /* TWTRPersistentStoreTest.m in Sources */,
 				370B4EF91A8BFEFB004FBA60 /* TWTRCollectionTimelineDataSourceTests.m in Sources */,
-				20563D111ED4F6FF0094DAB3 /* TWTRStubMobileSSO.m in Sources */,
-				3777841F1E96B8D200BC4830 /* TWTRStubTimelineDataSource.m in Sources */,
 				F6BE15F723E218BF00819ACF /* TWTRFileSystemTests.m in Sources */,
 				329E169A19490030003DF2CF /* TWTRTweetCacheTests.m in Sources */,
 				F6BE162723E218BF00819ACF /* TWTRURLSessionDelegateTests.m in Sources */,
@@ -3220,15 +3208,17 @@
 				37B6899C198B1CAF00E772CA /* TWTRTweetPresenterTests.m in Sources */,
 				3785414F19AFECE200789130 /* TWTRURLUtilityTests.m in Sources */,
 				377AF9311E7A00EB004099F9 /* TWTRComposerAccountTests.m in Sources */,
-				377784231E96B8D200BC4830 /* TWTRStubTwitterClient.m in Sources */,
+				F643DC3D23E8952E009E6640 /* TWTRStubTimelineDataSource.m in Sources */,
 				DB2FE65B1B0D4B36008468F6 /* TWTRMediaEntitySizeTests.m in Sources */,
 				3DE9C6101B16777200B141D4 /* TWTRAssetURLSessionConfigTests.m in Sources */,
 				F6BE15FA23E218BF00819ACF /* TWTRDateFormattersTests.m in Sources */,
 				370DD6EB1E80516100322854 /* TWTRComposerViewControllerTests.m in Sources */,
 				DBC654161CD13C6500FA6E29 /* TWTRPlayerCardEntityTests.m in Sources */,
+				F643DC4223E8952E009E6640 /* TWTRTestCase.m in Sources */,
 				DB5ED26A1CEE3D8F0066FF33 /* TWTRVideoCTAViewTests.m in Sources */,
 				DBFE5B341D1471B100C77F64 /* TWTRFixtureLoader.m in Sources */,
 				DBB361B91B0676D300DFD779 /* TWTRMediaEntityDisplayConfigurationTests.m in Sources */,
+				F643DC4023E8952E009E6640 /* TUDelorean.m in Sources */,
 				3D2B9F01196246B200BFA61B /* TWTRUserTests.m in Sources */,
 				37EB502A1C5FD71F00A9F9BD /* TWTRProfileHeaderViewTests.m in Sources */,
 				37E0DEB81E6F78160014698F /* TWTRComposerUserTests.m in Sources */,
@@ -3238,6 +3228,7 @@
 				F6BE161923E218BF00819ACF /* TWTRNetworkingPipelineTests.m in Sources */,
 				F6BE162223E218BF00819ACF /* TWTRAPIServiceConfigRegistryTests.m in Sources */,
 				DB811E5E1C519CAF00A1F453 /* TWTRValueTransformersTests.m in Sources */,
+				F643DC4123E8952E009E6640 /* TUDelorean+Rollback.m in Sources */,
 				374306A01B45ADC000D7C540 /* TWTRShareButtonTests.m in Sources */,
 				F6BE162023E218BF00819ACF /* TwitterAppAPIClientTests.m in Sources */,
 				F6BE161123E218BF00819ACF /* TWTRAuthenticationProviderTests.m in Sources */,
@@ -3252,7 +3243,6 @@
 				6C58C4D91AE7149400D042C7 /* TWTROAuthSigningTests.m in Sources */,
 				F6BE161723E218BF00819ACF /* TWTRAPIServiceConfigTests.m in Sources */,
 				3DF8F0871B20FCA100FAF579 /* TWTRImageLoaderDiskCacheTests.m in Sources */,
-				3777841B1E96B8D200BC4830 /* TUDelorean.m in Sources */,
 				6C9581CD1AE1EDBD002981F8 /* TWTRAPIClientTests.m in Sources */,
 				DB2590821BA8B0F7008A9380 /* TwitterSocialTests.m in Sources */,
 				3737FCC71B30988000D326F1 /* TWTRImagesTests.m in Sources */,
@@ -3260,7 +3250,7 @@
 				2002E6031E5F5BDA007AF951 /* TWTRTweetDelegationHelperTest.m in Sources */,
 				DB637FC91C6D10F500B1711C /* TWTRTweetMediaViewTests.m in Sources */,
 				3DD56F761905136D004A021C /* TWTRTweetTests.m in Sources */,
-				3777840D1E96B8D200BC4830 /* TWTRTestCase.m in Sources */,
+				F643DC3C23E8952E009E6640 /* TWTRStubTweetCache.m in Sources */,
 				F6BE161E23E218BF00819ACF /* TWTRUserAPIClientTests.m in Sources */,
 				F6BE160E23E218BF00819ACF /* TWTRAppleSocialAuthProviderTests.m in Sources */,
 				3D2B765919BC2AE800060ECF /* TWTRTweetShareItemProviderTests.m in Sources */,
@@ -3279,6 +3269,8 @@
 				F6BE161D23E218BF00819ACF /* TWTRAuthConfigSessionsValidatorTests.m in Sources */,
 				F6BE162B23E218BF00819ACF /* TWTRGCOAuthTests.m in Sources */,
 				F6BE162123E218BF00819ACF /* TWTRAuthConfigStoreTests.m in Sources */,
+				F643DC4723E8963C009E6640 /* TWTRStubMobileSSO.m in Sources */,
+				F643DC3E23E8952E009E6640 /* TWTRMockURLSessionProtocol.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
