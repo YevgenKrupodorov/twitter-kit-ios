@@ -93,4 +93,14 @@
     XCTAssertNotNil([TWTRImages vineBadgeImage]);
 }
 
+#pragma mark - Close Button
+
+- (void)testCloseButton
+{
+    id image = [TWTRImages closeButtonTemplateImage];
+    XCTAssertNotNil(image);
+    XCTAssertTrue([image isKindOfClass:[UIImage class]]);
+    XCTAssertEqual(UIImageRenderingModeAlwaysTemplate, [image renderingMode]);
+}
+
 @end

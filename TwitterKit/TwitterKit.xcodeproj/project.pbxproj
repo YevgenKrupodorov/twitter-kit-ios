@@ -1991,6 +1991,7 @@
 				208ACAB41FB2800900008F42 /* Frameworks */,
 				A97654E618E0B29B00E25169 /* Products */,
 			);
+			indentWidth = 4;
 			sourceTree = "<group>";
 		};
 		A97654E618E0B29B00E25169 /* Products */ = {

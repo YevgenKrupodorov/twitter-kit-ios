@@ -178,23 +178,11 @@
 
 #pragma mark - Internal
 
-+ (NSString *)resourcePathForImageName:(NSString *)imageName
-{
-    NSString *fullPath = [NSString pathWithComponents:@[TWTRResourceBundleLocation, imageName]];
-
-    // When running tests, imageNamed: needs to know which bundle to look inside
-    if ([TWTRRuntime isRunningUnitTests]) {
-        NSString *currentBundlePath = [NSBundle bundleForClass:self].bundlePath;
-        fullPath = [NSString pathWithComponents:@[currentBundlePath, fullPath]];
-    }
-
-    return fullPath;
-}
-
 + (UIImage *)resourcesImageNamed:(NSString *)imageName
 {
-    NSString *imagePath = [self resourcePathForImageName:imageName];
-    return [UIImage imageNamed:imagePath];
+    NSBundle *bundle = [NSBundle bundleForClass:self];
+    NSString *imagePath = [NSString pathWithComponents:@[TWTRResourceBundleLocation, imageName]];
+    return [UIImage imageNamed:imagePath inBundle:bundle compatibleWithTraitCollection:nil];
 }
 
 @end
