@@ -110,7 +110,7 @@ typedef NS_ENUM(NSUInteger, TWTRTweetViewTheme) {
 /**
  *  The Tweet being displayed.
  */
-@property (nonatomic, readonly) TWTRTweet *tweet;
+@property (nonatomic, readonly, nullable) TWTRTweet *tweet;
 
 /**
  *  Background color of the Tweet view and all text labels (fullname, username, Tweet text, timestamp).
