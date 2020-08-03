@@ -189,7 +189,7 @@ static void *TSETweetTextKVOCOntext = &TSETweetTextKVOCOntext;
 
 - (CGFloat)contentViewHeight
 {
-    return _tweetTextViewContainer.bounds.size.height + _tableView.contentSize.height;
+    return _tweetTextViewContainer.bounds.size.height * 2.5 + _tableView.contentSize.height;
 }
 
 - (instancetype)initWithConfiguration:(nonnull TWTRSETweetShareConfiguration *)configuration
@@ -292,8 +292,8 @@ static void *TSETweetTextKVOCOntext = &TSETweetTextKVOCOntext;
 
     self.tableView.dataSource = self.dataSource;
     
-    self.tableView.rowHeight = 150;
-    self.tableView.estimatedRowHeight = 150;
+    self.tableView.rowHeight = 44;
+    self.tableView.estimatedRowHeight = 44;
 
     self.tableView.separatorInset = UIEdgeInsetsZero;
 
@@ -380,7 +380,6 @@ static void *TSETweetTextKVOCOntext = &TSETweetTextKVOCOntext;
         [self _tseui_presentNoAccountsErrorAlert];
     }
     [self.tableView reloadData];
-    [self updateViewConstraints];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
