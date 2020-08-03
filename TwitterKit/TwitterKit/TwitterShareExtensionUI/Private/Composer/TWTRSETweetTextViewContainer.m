@@ -195,7 +195,7 @@ static const UIEdgeInsets kComposeTextViewTextContainerInsets = {.top = 8, .left
 
 - (NSUInteger)minNumberOfLinesToDisplay
 {
-    return (UIUserInterfaceSizeClassRegular == self.traitCollection.verticalSizeClass) ? 3 : 2;
+    return (UIUserInterfaceSizeClassRegular == self.traitCollection.verticalSizeClass) ? 6 : 6;
 }
 
 - (void)configureWithTweet:(TWTRSETweet *)tweet
@@ -235,7 +235,6 @@ static const UIEdgeInsets kComposeTextViewTextContainerInsets = {.top = 8, .left
 {
     if (text != self.textView.text && ![self.textView.text isEqual:text]) {
         self.textView.text = text;
-
         [self _tseui_updateLineCount];
         [self _tseui_notifyDelegateWithUpdatedText];
     }

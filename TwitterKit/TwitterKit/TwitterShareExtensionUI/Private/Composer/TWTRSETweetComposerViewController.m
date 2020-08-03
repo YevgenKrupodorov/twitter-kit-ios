@@ -177,7 +177,7 @@ static void *TSETweetTextKVOCOntext = &TSETweetTextKVOCOntext;
 
 - (CGRect)autoCompletionResultsViewControllerCalculatedFrame
 {
-    const CGFloat twoRowsIsh = _autoCompletionResultsViewController.tableView.estimatedRowHeight * kEnoughRowsToImplyScrollableTable + 120;
+    const CGFloat twoRowsIsh = _autoCompletionResultsViewController.tableView.estimatedRowHeight * kEnoughRowsToImplyScrollableTable;
     const CGFloat textViewHeightMinusCharCounterCenterYIsh = CGRectGetHeight(_scrollView.bounds) - _tweetTextViewContainer.textViewHeight - twoRowsIsh / kTwoTableViewRows;
     const CGFloat autoCompletionResultsHeight = MAX(twoRowsIsh, textViewHeightMinusCharCounterCenterYIsh);
     const CGFloat autoCompletionResultsVerticalOrigin = CGRectGetMaxY(_scrollView.frame) - ((_autoCompletionResultsVisible) ? autoCompletionResultsHeight : 0);
@@ -189,7 +189,7 @@ static void *TSETweetTextKVOCOntext = &TSETweetTextKVOCOntext;
 
 - (CGFloat)contentViewHeight
 {
-    return _tweetTextViewContainer.bounds.size.height + _tableView.contentSize.height + 120;
+    return _tweetTextViewContainer.bounds.size.height + _tableView.contentSize.height;
 }
 
 - (instancetype)initWithConfiguration:(nonnull TWTRSETweetShareConfiguration *)configuration
@@ -465,7 +465,7 @@ static void *TSETweetTextKVOCOntext = &TSETweetTextKVOCOntext;
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey, id> *)change context:(void *)context
 {
     if (context == TWTRSETableViewContentSizeKVOContext || context == TWTRSETweetTextViewContainerBoundsSizeKVOContext) {
-        self.preferredContentSize = (CGSize){.width = _tweetTextViewContainer.bounds.size.width, .height = self.contentViewHeight};
+        self.preferredContentSize = (CGSize){.width = _tweetTextViewContainer.bounds.size.width, .height = self.contentViewHeight + 120};
 
         // this ensures that when typing expands the bounds of the text view or
         // an attachment view replaces the spinner, everything is positioned correctly
