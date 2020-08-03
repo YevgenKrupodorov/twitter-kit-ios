@@ -178,7 +178,7 @@ static void *TSETweetTextKVOCOntext = &TSETweetTextKVOCOntext;
 - (CGRect)autoCompletionResultsViewControllerCalculatedFrame
 {
     const CGFloat twoRowsIsh = _autoCompletionResultsViewController.tableView.estimatedRowHeight * kEnoughRowsToImplyScrollableTable;
-    const CGFloat textViewHeightMinusCharCounterCenterYIsh = CGRectGetHeight(_scrollView.bounds) - _tweetTextViewContainer.textViewHeight - twoRowsIsh / kTwoTableViewRows;
+    const CGFloat textViewHeightMinusCharCounterCenterYIsh = CGRectGetHeight(_scrollView.bounds) + 120 - _tweetTextViewContainer.textViewHeight - twoRowsIsh / kTwoTableViewRows;
     const CGFloat autoCompletionResultsHeight = MAX(twoRowsIsh, textViewHeightMinusCharCounterCenterYIsh);
     const CGFloat autoCompletionResultsVerticalOrigin = CGRectGetMaxY(_scrollView.frame) - ((_autoCompletionResultsVisible) ? autoCompletionResultsHeight : 0);
     const CGRect frame = {
