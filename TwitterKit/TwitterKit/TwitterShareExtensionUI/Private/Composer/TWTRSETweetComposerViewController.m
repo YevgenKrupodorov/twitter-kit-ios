@@ -379,6 +379,7 @@ static void *TSETweetTextKVOCOntext = &TSETweetTextKVOCOntext;
     if (_configuration.accounts.count == 0) {
         [self _tseui_presentNoAccountsErrorAlert];
     }
+    [super viewDidLoad];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
