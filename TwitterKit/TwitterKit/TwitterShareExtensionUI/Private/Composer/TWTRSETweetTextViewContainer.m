@@ -197,7 +197,7 @@ static const UIEdgeInsets kComposeTextViewTextContainerInsets = {.top = 8, .left
 
 - (NSUInteger)minNumberOfLinesToDisplay
 {
-    return (UIUserInterfaceSizeClassRegular == self.traitCollection.verticalSizeClass) ? 10 : 10;
+    return (UIUserInterfaceSizeClassRegular == self.traitCollection.verticalSizeClass) ? 2 : 3;
 }
 
 - (void)configureWithTweet:(TWTRSETweet *)tweet

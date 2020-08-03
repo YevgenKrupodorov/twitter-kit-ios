@@ -380,6 +380,8 @@ static void *TSETweetTextKVOCOntext = &TSETweetTextKVOCOntext;
         [self _tseui_presentNoAccountsErrorAlert];
     }
     [super viewDidLoad];
+    [self _tseui_updateContentConstraintsWithSize:self.view.bounds.size];
+    [self updateViewConstraints];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
