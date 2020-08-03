@@ -179,6 +179,8 @@ static const UIEdgeInsets kComposeTextViewTextContainerInsets = {.top = 8, .left
 {
     self.characterCounterLabel.text = [NSString stringWithFormat:@"%@", @([self.tweet remainingCharacters])];
     self.characterCounterLabel.textColor = ([self.tweet isNearOrOverCharacterLimit]) ? _characterCountOverLimitColor : _characterCountBelowLimitColor;
+    [self _tseui_updateLineCount];
+    [self _tseui_notifyDelegateWithUpdatedText];
 }
 
 - (void)_tseui_updateLineCount
@@ -195,7 +197,7 @@ static const UIEdgeInsets kComposeTextViewTextContainerInsets = {.top = 8, .left
 
 - (NSUInteger)minNumberOfLinesToDisplay
 {
-    return (UIUserInterfaceSizeClassRegular == self.traitCollection.verticalSizeClass) ? 6 : 6;
+    return (UIUserInterfaceSizeClassRegular == self.traitCollection.verticalSizeClass) ? 10 : 10;
 }
 
 - (void)configureWithTweet:(TWTRSETweet *)tweet

@@ -291,7 +291,7 @@ static void *TSETweetTextKVOCOntext = &TSETweetTextKVOCOntext;
     self.tableView.bounces = NO;
 
     self.tableView.dataSource = self.dataSource;
-    
+
     self.tableView.rowHeight = 44;
     self.tableView.estimatedRowHeight = 44;
 
@@ -379,7 +379,6 @@ static void *TSETweetTextKVOCOntext = &TSETweetTextKVOCOntext;
     if (_configuration.accounts.count == 0) {
         [self _tseui_presentNoAccountsErrorAlert];
     }
-    [self.tableView reloadData];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -465,7 +464,7 @@ static void *TSETweetTextKVOCOntext = &TSETweetTextKVOCOntext;
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey, id> *)change context:(void *)context
 {
     if (context == TWTRSETableViewContentSizeKVOContext || context == TWTRSETweetTextViewContainerBoundsSizeKVOContext) {
-        self.preferredContentSize = (CGSize){.width = _tweetTextViewContainer.bounds.size.width, .height = self.contentViewHeight + 120};
+        self.preferredContentSize = (CGSize){.width = _tweetTextViewContainer.bounds.size.width, .height = self.contentViewHeight};
 
         // this ensures that when typing expands the bounds of the text view or
         // an attachment view replaces the spinner, everything is positioned correctly
