@@ -291,7 +291,7 @@ static void *TSETweetTextKVOCOntext = &TSETweetTextKVOCOntext;
     self.tableView.bounces = NO;
 
     self.tableView.dataSource = self.dataSource;
-
+    
     self.tableView.rowHeight = 44;
     self.tableView.estimatedRowHeight = 44;
 
@@ -308,7 +308,6 @@ static void *TSETweetTextKVOCOntext = &TSETweetTextKVOCOntext;
     [_tweetTextViewContainer configureWithTweet:self.dataSource.composedTweet];
 
     [self.dataSource registerCellClassesInTableView:self.tableView];
-    [self.tableView reloadData];
 }
 
 - (void)updateViewConstraints
@@ -380,6 +379,8 @@ static void *TSETweetTextKVOCOntext = &TSETweetTextKVOCOntext;
     if (_configuration.accounts.count == 0) {
         [self _tseui_presentNoAccountsErrorAlert];
     }
+    [self.tableView reloadData];
+    [self updateViewConstraints];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
