@@ -308,6 +308,7 @@ static void *TSETweetTextKVOCOntext = &TSETweetTextKVOCOntext;
     [_tweetTextViewContainer configureWithTweet:self.dataSource.composedTweet];
 
     [self.dataSource registerCellClassesInTableView:self.tableView];
+    [self.tableView reloadData];
 }
 
 - (void)updateViewConstraints
