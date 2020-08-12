@@ -21,8 +21,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-#if __IPHONE_OS_VERSION_MIN_REQUIRED < 90000
-#error "TwitterKit doesn't support iOS 8.x and lower. Please, change your minimum deployment target to iOS 9.0"
+#if __IPHONE_OS_VERSION_MIN_REQUIRED > 20000 && __IPHONE_OS_VERSION_MIN_REQUIRED < 90000
+#warning "TwitterKit doesn't support iOS 8.x and lower. Please, change your minimum deployment target to iOS 9.0"
 #endif
 
 #import "TWTRAPIErrorCode.h"
