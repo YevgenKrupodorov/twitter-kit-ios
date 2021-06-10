@@ -3570,6 +3570,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F6BE157623E20E7200819ACF /* TwitterKit.xcconfig */;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_IDENTITY = "";
 				MARKETING_VERSION = 5.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.twitter.sdk.ios;
@@ -3580,6 +3581,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F6BE157623E20E7200819ACF /* TwitterKit.xcconfig */;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_IDENTITY = "";
 				MARKETING_VERSION = 5.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.twitter.sdk.ios;
