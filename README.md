@@ -3,32 +3,45 @@
 pod 'TwitterKit5'
 ```
 
-**How to build and use the customized TwitterKit pod**
-1. Build TwitterKit.zip. In the root folder of the project, run
-```
-./build.sh
-```
-2. Upload the TwitterKit.zip file somewhere and get a [URL](https://swarm-dev.s3.amazonaws.com/pods/twitterkit/ios/5.0.0/TwitterKit.zip) points to it.
-3. Change your [podspec file](https://raw.githubusercontent.com/touren/twitter-kit-ios/Swift5/TwitterKit/TwitterKit.podspec) as:  s.source = { :http => "<URL created in step 2>" }
-4. Change your Podfile as: `pod "TwitterKit"` ==> `pod "TwitterKit", :podspec => "<URL point to the podspec created in step 3>"`
-
-
-**How to build and push to CocoaPods TwitterKit5**
-1. Build TwitterKit.zip. In the root folder of the project, run
-```
-./build.sh
-```
-2. Release a new version in [GitHub](https://github.com/touren/twitter-kit-ios/releases), say 5.0.2, upload the TwitterKit.zip just built.
-3. Update TwitterKit5.podspec, make sure `s.version` and `s.source` is correct.
-4. Deploy to [CocoaPods Trunk](https://guides.cocoapods.org/making/getting-setup-with-trunk.html)
-> For Swift Package Mangaer set the .zip file url inside `Package.swift`.
-```
-pod trunk push TwitterKit5.podspec
-```
-
-----
-
-**Twitter will be discontinuing support for Twitter Kit on October 31, 2018. [Read the blog post here](https://blog.twitter.com/developer/en_us/topics/tools/2018/discontinuing-support-for-twitter-kit-sdk.html).**
+## Build instructions
+1. Delete the `Package.swift` file (save its contents somewhere as we will restore it at the end).
+2. Create a folder `output` on the project directory.
+3. Navigate inside the `TwitterKit` folder on the terminal.
+4. Archive the project for the simulator
+  ```
+  xcodebuild archive \
+  -scheme TwitterKit \
+  -archivePath ../output/TwitterKit-iphonesimulator.xcarchive \
+  -sdk iphonesimulator \
+  SKIP_INSTALL=NO \
+  BUILD_LIBRARY_FOR_DISTRIBUTION=YES
+  ```
+4. Archive the project for the iPhone
+  ```
+  xcodebuild archive \
+  -scheme TwitterKit \
+  -archivePath ../output/TwitterKit-iphoneos.xcarchive \
+  -sdk iphoneos \
+  SKIP_INSTALL=NO \
+  BUILD_LIBRARY_FOR_DISTRIBUTION=YES
+  ```
+5. Navigate to the root project folder.
+6. Create XCFramework zip file
+  ```
+  xcodebuild -create-xcframework \
+ -framework output/TwitterKit-iphonesimulator.xcarchive/Products/Library/Frameworks/TwitterKit.framework \
+ -framework output/TwitterKit-iphoneos.xcarchive/Products/Library/Frameworks/TwitterKit.framework \
+ -output output/TwitterKit.xcframework
+ ```
+7. Create a [new release](https://github.com/Alqueraf/twitter-kit-ios/releases/new) on the repository.
+8. Upload the `TwitterKit.xcframework.zip` file.
+9. Add the `Package.swift` file again.
+10. Inside `Package.swift`, update the **url** value of the binary target to match the URL of the new zip release in GitHub.
+11. Get the SHA256 of the zip file
+  ```
+  shasum -a 256 TwitterKit.xcframework.zip
+  ```
+12. Inside `Package.swift`, update the **checksum** value of the binary target with the result from the previous command.
 
 # Twitter Kit for iOS
 
@@ -82,25 +95,6 @@ target 'MyApp' do
   pod 'TwitterKit'
 end
 ```
-
-### Install using Carthage
-
-To install Twitter Kit for iOS using Carthage, add the following lines to your Cartfile. For more information about how to set up Carthage and your Cartfile, see [here](https://github.com/Carthage/Carthage).
-
-```swift
-binary "https://ton.twimg.com/syndication/twitterkit/ios/TwitterKit.json"
-binary "https://ton.twimg.com/syndication/twitterkit/ios/TwitterCore.json"
-```
-
-After running `carthage update`, add `TwitterKit.framework` and `TwitterShareExtensionUI.framework` to the `Linked Frameworks and Binaries` section under General of your App target. In addition to that, make sure that when you are adding the copy-frameworks run script for Carthage that you add the following input paths: 
-
-```swift
-$(SRCROOT)/Carthage/Build/iOS/TwitterCore.framework
-$(SRCROOT)/Carthage/Build/iOS/TwitterKit.framework
-$(SRCROOT)/Carthage/Build/iOS/TwitterShareExtensionUI.framework
-```
-
-Make sure that the run script phase is after your Link Binaries with Libraries phase to prevent issues with properly archiving your iOS application.
 
 ### Preview Twitter Kit Features in the Demo App
 

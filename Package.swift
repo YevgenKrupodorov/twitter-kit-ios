@@ -19,11 +19,11 @@ let package = Package(
     targets: [
         
         // https://github.com/ResultsDirect/TwitterKit/blob/main/Package.swift
-        // Get checksum using "shasum -a 256 TwitterKit.zip"
+        // Get checksum using "shasum -a 256 TwitterKit.xcframework.zip"
         .binaryTarget(
                 name: "TwitterKit",
-                url: "https://github.com/Alqueraf/twitter-kit-ios/releases/download/v5.3.4/TwitterKit.zip",
-                checksum: "aa6dd80ca360e0cde4005813534e4fbdfff4772f5e21cde362bb40f378a425ca"
+                url: "https://github.com/Alqueraf/twitter-kit-ios/releases/download/v5.4.0/TwitterKit.xcframework.zip",
+                checksum: "778d280e60d9b9af66756737c6abc1ef7a9c64bc63ab431de804db5a55acd25a"
             ),
     ]
 )
