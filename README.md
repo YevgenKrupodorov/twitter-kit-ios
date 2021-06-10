@@ -21,6 +21,7 @@ pod 'TwitterKit5'
 2. Release a new version in [GitHub](https://github.com/touren/twitter-kit-ios/releases), say 5.0.2, upload the TwitterKit.zip just built.
 3. Update TwitterKit5.podspec, make sure `s.version` and `s.source` is correct.
 4. Deploy to [CocoaPods Trunk](https://guides.cocoapods.org/making/getting-setup-with-trunk.html)
+> For Swift Package Mangaer set the .zip file url inside `Package.swift`.
 ```
 pod trunk push TwitterKit5.podspec
 ```
