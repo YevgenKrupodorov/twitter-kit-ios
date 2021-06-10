@@ -15,7 +15,7 @@
  *
  */
 
-#import <TwitterCore/TWTRColorUtil.h>
+#import "TWTRColorUtil.h"
 #import <XCTest/XCTest.h>
 #import "TWTRFixtureLoader.h"
 #import "TWTRTweetContentView+Layout.h"

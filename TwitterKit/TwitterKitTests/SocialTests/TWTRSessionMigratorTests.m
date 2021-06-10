@@ -16,8 +16,8 @@
  */
 
 #import <OCMock/OCMock.h>
-#import <TwitterCore/TWTRAuthenticator.h>
-#import <TwitterCore/TWTRSessionStore.h>
+#import "TWTRAuthenticator.h"
+#import "TWTRSessionStore.h"
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 #import "TWTRSessionMigrator.h"

@@ -16,9 +16,9 @@
  */
 
 #import <OCMock/OCMock.h>
-#import <TwitterCore/TWTRDateFormatters.h>
-#import <TwitterCore/TWTRDateFormatters_Private.h>
 #import <XCTest/XCTest.h>
+#import "TWTRDateFormatters.h"
+#import "TWTRDateFormatters_Private.h"
 
 static NSString *const APIDateString = @"Mon Mar 05 22:08:25 +0000 2007";
 

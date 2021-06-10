@@ -16,7 +16,7 @@
  */
 
 #import <OCMock/OCMock.h>
-#import <TwitterCore/TWTRAuthConfig.h>
+#import "TWTRAuthConfig.h"
 #import "TWTRAppAuthProvider.h"
 #import "TWTRAppAuthProvider_Private.h"
 #import "TWTRAuthenticationConstants.h"

@@ -20,7 +20,7 @@
  */
 
 #import <Foundation/Foundation.h>
-#import <TwitterCore/TWTRNetworkingPipeline.h>
+#import "TWTRNetworkingPipeline.h"
 
 @class TWTRNetworkingPipelinePackage;
 

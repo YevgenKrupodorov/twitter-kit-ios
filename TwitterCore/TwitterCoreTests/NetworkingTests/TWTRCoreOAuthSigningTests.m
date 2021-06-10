@@ -15,12 +15,9 @@
  *
  */
 
-#import <TwitterCore/TWTRAuthConfig.h>
-#import <TwitterCore/TWTRAuthSession.h>
-#import <TwitterCore/TWTRConstants.h>
-#import <TwitterCore/TWTRCoreOAuthSigning+Private.h>
-#import <TwitterCore/TWTRCoreOAuthSigning.h>
+@import TwitterKit;
 #import "TWTRTestCase.h"
+#import "TWTRCoreOAuthSigning+Private.h"
 
 static NSString *const TWTRFakeConsumerKey = @"com.TWTROAuthSigningTests.consumer.key";
 static NSString *const TWTRFakeConsumerSecret = @"com.TWTROAuthSigningTests.consumer.secret";

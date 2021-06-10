@@ -19,12 +19,20 @@
 #import <Accounts/Accounts.h>
 #import <CoreMedia/CoreMedia.h>
 #import <Foundation/Foundation.h>
-#import <TwitterCore/TwitterCore.h>
 #import <UIKit/UIKit.h>
 
-#if __IPHONE_OS_VERSION_MIN_REQUIRED < 90000
-#error "TwitterKit doesn't support iOS 8.x and lower. Please, change your minimum deployment target to iOS 9.0"
+#if __IPHONE_OS_VERSION_MIN_REQUIRED > 20000 && __IPHONE_OS_VERSION_MIN_REQUIRED < 90000
+#warning "TwitterKit doesn't support iOS 8.x and lower. Please, change your minimum deployment target to iOS 9.0"
 #endif
+
+#import "TWTRAPIErrorCode.h"
+#import "TWTRAuthConfig.h"
+#import "TWTRAuthSession.h"
+#import "TWTRConstants.h"
+#import "TWTRCoreOAuthSigning.h"
+#import "TWTRGuestSession.h"
+#import "TWTRSession.h"
+#import "TWTRSessionStore.h"
 
 #import "TWTRAPIClient.h"
 #import "TWTRCollectionTimelineDataSource.h"
@@ -34,8 +42,6 @@
 #import "TWTRListTimelineDataSource.h"
 #import "TWTRLogInButton.h"
 #import "TWTRMediaEntitySize.h"
-#import "TWTRMoPubAdConfiguration.h"
-#import "TWTRMoPubNativeAdContainerView.h"
 #import "TWTRNotificationConstants.h"
 #import "TWTROAuthSigning.h"
 #import "TWTRSearchTimelineDataSource.h"

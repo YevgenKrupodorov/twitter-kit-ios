@@ -48,8 +48,6 @@ NS_ASSUME_NONNULL_BEGIN
 + (UIImage *)buttonImageWithCornerRadius:(CGFloat)radius backgroundColor:(UIColor *)backgroundColor;
 + (UIImage *)buttonImageWithCornerRadius:(CGFloat)radius backgroundColor:(UIColor *)backgroundColor borderColor:(nullable UIColor *)borderColor;
 
-+ (NSString *)resourcePathForImageName:(NSString *)imageName;
-
 /// Video player icons
 + (UIImage *)mediaPauseTemplateImage;
 + (UIImage *)mediaPlayTemplateImage;

@@ -16,8 +16,8 @@
  */
 
 #import <OCMock/OCMock.h>
-#import <TwitterCore/TWTRAuthenticationConstants.h>
-#import <TwitterCore/TWTRSessionStore_Private.h>
+#import "TWTRAuthenticationConstants.h"
+#import "TWTRSessionStore_Private.h"
 #import <XCTest/XCTest.h>
 #import <XCTest/XCTestCase+AsynchronousTesting.h>
 #import "TWTRComposer.h"

@@ -24,7 +24,11 @@
 /**
  *  When this is enabled, it will replace the implementation of NSLayoutConstraint with a more descriptive format.
  */
-#define TWTR_AUTO_LAYOUT_DEBUGGING_ENABLED defined(DEBUG)
+#if defined(DEBUG)
+#define TWTR_AUTO_LAYOUT_DEBUGGING_ENABLED 1
+#else
+#define TWTR_AUTO_LAYOUT_DEBUGGING_ENABLED 0
+#endif
 
 #if TWTR_AUTO_LAYOUT_DEBUGGING_ENABLED
 

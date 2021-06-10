@@ -15,8 +15,8 @@
  *
  */
 
-#import <TwitterCore/TWTRDateFormatters.h>
-#import <TwitterCore/TWTRDateFormatters_Private.h>
+#import "TWTRDateFormatters.h"
+#import "TWTRDateFormatters_Private.h"
 #import <XCTest/XCTest.h>
 #import "TUDelorean+Rollback.h"
 #import "TUDelorean.h"
@@ -73,8 +73,8 @@
 - (void)testNilDate_EmptyStrings
 {
     self.timestamp.date = nil;
-    XCTAssertEqual(self.timestamp.text, @"");
-    XCTAssertEqual(self.timestamp.accessibilityLabel, @"");
+    XCTAssertEqualObjects(self.timestamp.text, @"");
+    XCTAssertEqualObjects(self.timestamp.accessibilityLabel, @"");
 }
 
 - (void)testRegularFormattedDate

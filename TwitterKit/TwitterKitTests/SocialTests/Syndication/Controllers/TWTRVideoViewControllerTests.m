@@ -15,7 +15,7 @@
  *
  */
 
-#import <TwitterCore/TWTRUtils.h>
+#import "TWTRUtils.h"
 #import <XCTest/XCTest.h>
 #import "TWTRFixtureLoader.h"
 #import "TWTRMediaContainerViewController.h"

@@ -17,11 +17,13 @@ xcuserdata/
 config.log
 config.status
 *.xcscmblueprint
+iphoneos/
+iphonesimulator/
 
 *.gcda
 *.gcno
 
-!**/Carthage/Build
+Carthage
 Artifacts
 DemoApp/Config.xcconfig
 

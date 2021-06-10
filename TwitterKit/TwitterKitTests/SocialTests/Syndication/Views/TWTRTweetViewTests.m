@@ -16,7 +16,7 @@
  */
 
 #import <OCMock/OCMock.h>
-#import <TwitterCore/TWTRColorUtil.h>
+#import "TWTRColorUtil.h"
 #import <XCTest/XCTest.h>
 #import "TWTRAttributedLabel.h"
 #import "TWTRFixtureLoader.h"

@@ -17,9 +17,9 @@
 
 #import <OCMock/OCMock.h>
 #import <SafariServices/SafariServices.h>
-#import <TwitterCore/TWTRAuthConfig.h>
-#import <TwitterCore/TWTRSessionStore_Private.h>
-#import <TwitterCore/TWTRUtils.h>
+#import "TWTRAuthConfig.h"
+#import "TWTRSessionStore_Private.h"
+#import "TWTRUtils.h"
 #import <XCTest/XCTest.h>
 #import "TWTRAPIClient.h"
 #import "TWTRLoginURLParser.h"

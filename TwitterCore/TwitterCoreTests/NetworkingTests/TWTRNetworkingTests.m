@@ -16,7 +16,7 @@
  */
 
 #import <OCMock/OCMock.h>
-#import <TwitterCore/TWTRAuthConfig.h>
+@import TwitterKit;
 #import "TWTRFakeAuthenticationChallengeSender.h"
 #import "TWTRNetworking.h"
 #import "TWTRServerTrustEvaluator.h"

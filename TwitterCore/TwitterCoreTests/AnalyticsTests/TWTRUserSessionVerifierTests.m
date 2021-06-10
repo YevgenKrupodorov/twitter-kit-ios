@@ -123,11 +123,16 @@
 {
     NSDate *now = [NSDate date];
     NSDate *oneDayAgo = [now dateByAddingTimeInterval:24 * 60 * 60];
+    XCTestExpectation *expectation = [self expectationWithDescription:@"wait for verification"];
+    
     self.verifier.lastVerifiedTimestamp = oneDayAgo;
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self.verifier verifyNowIfNecessary];
-        XCTAssertTrue([self.verifier.lastVerifiedTimestamp timeIntervalSinceDate:oneDayAgo] > 0);
+        XCTAssertTrue([oneDayAgo timeIntervalSinceDate:self.verifier.lastVerifiedTimestamp] > 0);
+        [expectation fulfill];
     });
+    
+    [self waitForExpectationsWithTimeout:1 handler:nil];
 }
 
 @end
