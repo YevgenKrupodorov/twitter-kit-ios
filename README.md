@@ -33,8 +33,6 @@ pod 'TwitterKit5'
  -framework output/TwitterKit-iphoneos.xcarchive/Products/Library/Frameworks/TwitterKit.framework \
  -output output/TwitterKit.xcframework
  ```
-7. Create a **.zip** file from the resulting **TwitterKit.framework** directory.
-7. Create a [new release](https://github.com/Alqueraf/twitter-kit-ios/releases/new) on the repository.
 8. Upload the `TwitterKit.xcframework.zip` file.
 9. Add the `Package.swift` file again.
 10. Inside `Package.swift`, update the **url** value of the binary target to match the URL of the new zip release in GitHub.
@@ -43,6 +41,9 @@ pod 'TwitterKit5'
   shasum -a 256 TwitterKit.xcframework.zip
   ```
 12. Inside `Package.swift`, update the **checksum** value of the binary target with the result from the previous command.
+13. Commit and Push your changes.
+7. Create a **.zip** file from the resulting **TwitterKit.framework** directory.
+7. Create a [new release](https://github.com/Alqueraf/twitter-kit-ios/releases/new) on the repository.
 15. Update your project's Swift Package Manager dependencies.
 
 # Twitter Kit for iOS
