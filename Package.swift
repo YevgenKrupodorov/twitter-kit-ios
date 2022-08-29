@@ -17,7 +17,11 @@ let package = Package(
         // .package(url: /* package url */, from: "1.0.0"),
     ],
     targets: [
-        
+         .target(
+            name: "TwitterKit",
+            resources: [ ],
+            dependencies: [ ]
+        ),
         // https://github.com/ResultsDirect/TwitterKit/blob/main/Package.swift
         // Get checksum using "shasum -a 256 TwitterKit.xcframework.zip"
         .binaryTarget(
